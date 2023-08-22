@@ -13,4 +13,11 @@ if (!conn) {
   });
 }
 
+// Graceful shutdown: Close the connection pool when the application is shutting down
+process.on('beforeExit', async () => {
+  console.log('Closing PostgreSQL connection pool...');
+  await conn.end();
+  console.log('PostgreSQL connection pool closed.');
+});
+
 export { conn };
