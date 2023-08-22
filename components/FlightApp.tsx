@@ -6,8 +6,11 @@ import {
   Text,
   Divider,
   Button,
-  Center,
-  Container,
+  UnorderedList,
+  ListItem,
+  Image,
+  Box,
+  Stack
 } from '@chakra-ui/react';
 
 import Header from './Header';
@@ -41,17 +44,29 @@ const FlightApp: React.FC = () => {
   return (
     <Flex flexDir='column' m='10'>
       <Header/>
-      <Container>
-        <Text py='5'>Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.</Text>
-        <Center>
-          <Button width='50%' onClick={getFlightData}>Get Flight Data</Button>
-        </Center>
-      </Container>
-      {flightData &&
+      <Stack spacing={8} direction='row'>
+        <Image 
+          src='/aircraft.png'
+          alt='aircraft'
+          width='500px'
+        />
+        <Box px='5'>
+          <Text py='5'>Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.</Text>
+          <UnorderedList>
+            <ListItem py='2'>Air Traffic Analytics</ListItem>
+            <ListItem py='2'>Regulatory Compliance</ListItem>
+            <ListItem py='2'>Data Security and Privacy</ListItem>
+            <ListItem py='2'>Historical Flight Data</ListItem>
+            <ListItem py='2'>API Integration</ListItem>
+          </UnorderedList>
+          <Button width='50%' onClick={getFlightData} my='20'>Get Flight Data</Button>
+        </Box>
+      </Stack>
+      {(flightData.length > 0) &&
         <Flex flexDir='column' p='2' gap='2'>
-          {/* <Flex justifyContent='center' py='5'>
-            <iframe sandbox="allow-same-origin allow-scripts" width="650" height="500" src="https://www.radarbox.com/?widget=1&z=7&lat=53.5461&lng=-113.4937&hideAirportCard=true"></iframe>
-          </Flex> */}
+          <Flex justifyContent='center' py='5'>
+            <Image width="650" height="500" src='/airnav.png' />
+          </Flex> 
           {flightData.slice(0, 10).map((flight, index) => (
             <React.Fragment key={flight.icao}>
               <Text fontSize='2xl' as='u'>Flight {index+1}</Text>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Center, Flex, Container } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
 import Header from './Header';
 import TableUI from './TableUI';
