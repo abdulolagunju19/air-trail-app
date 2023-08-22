@@ -49,9 +49,9 @@ const FlightApp: React.FC = () => {
       </Container>
       {flightData &&
         <Flex flexDir='column' p='2' gap='2'>
-          <Flex justifyContent='center' py='5'>
+          {/* <Flex justifyContent='center' py='5'>
             <iframe sandbox="allow-same-origin allow-scripts" width="650" height="500" src="https://www.radarbox.com/?widget=1&z=7&lat=53.5461&lng=-113.4937&hideAirportCard=true"></iframe>
-          </Flex>
+          </Flex> */}
           {flightData.slice(0, 10).map((flight, index) => (
             <React.Fragment key={flight.icao}>
               <Text fontSize='2xl' as='u'>Flight {index+1}</Text>
