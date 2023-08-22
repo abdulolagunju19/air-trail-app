@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home AirTrail Traffic Registry displayed home page 1`] = `
+<div>
+  <div
+    class="css-hfb0g6"
+  >
+    <div
+      class="css-pcugif"
+    >
+      <a
+        class="chakra-button css-4xx2wk"
+        href="/"
+      >
+        <h2
+          class="chakra-heading css-0"
+        >
+          AirTrail Traffic Registry
+        </h2>
+      </a>
+      <div
+        class="css-17xejub"
+      />
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/dashboard"
+        >
+          Add Flight
+        </a>
+      </div>
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <br />
+    <hr
+      aria-orientation="horizontal"
+      class="chakra-divider css-1upb9tn"
+    />
+    <div
+      class="chakra-container css-0"
+    >
+      <p
+        class="chakra-text css-1lx593h"
+      >
+        Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.
+      </p>
+      <div
+        class="css-gmuwbf"
+      >
+        <button
+          class="chakra-button css-1eh75x4"
+          type="button"
+        >
+          Get Flight Data
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home AirTrail Traffic Registry displayed on home page 1`] = `
+<div>
+  <div
+    class="css-hfb0g6"
+  >
+    <div
+      class="css-pcugif"
+    >
+      <a
+        class="chakra-button css-4xx2wk"
+        href="/"
+      >
+        <h2
+          class="chakra-heading css-0"
+        >
+          AirTrail Traffic Registry
+        </h2>
+      </a>
+      <div
+        class="css-17xejub"
+      />
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/dashboard"
+        >
+          Add Flight
+        </a>
+      </div>
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <br />
+    <hr
+      aria-orientation="horizontal"
+      class="chakra-divider css-1upb9tn"
+    />
+    <div
+      class="chakra-container css-0"
+    >
+      <p
+        class="chakra-text css-1lx593h"
+      >
+        Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.
+      </p>
+      <div
+        class="css-gmuwbf"
+      >
+        <button
+          class="chakra-button css-1eh75x4"
+          type="button"
+        >
+          Get Flight Data
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home renders a heading 1`] = `
+<div>
+  <div
+    class="css-hfb0g6"
+  >
+    <div
+      class="css-pcugif"
+    >
+      <a
+        class="chakra-button css-4xx2wk"
+        href="/"
+      >
+        <h2
+          class="chakra-heading css-0"
+        >
+          AirTrail Traffic Registry
+        </h2>
+      </a>
+      <div
+        class="css-17xejub"
+      />
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/dashboard"
+        >
+          Add Flight
+        </a>
+      </div>
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <br />
+    <hr
+      aria-orientation="horizontal"
+      class="chakra-divider css-1upb9tn"
+    />
+    <div
+      class="chakra-container css-0"
+    >
+      <p
+        class="chakra-text css-1lx593h"
+      >
+        Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.
+      </p>
+      <div
+        class="css-gmuwbf"
+      >
+        <button
+          class="chakra-button css-1eh75x4"
+          type="button"
+        >
+          Get Flight Data
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Home renders the home page 1`] = `
+<div>
+  <div
+    class="css-hfb0g6"
+  >
+    <div
+      class="css-pcugif"
+    >
+      <a
+        class="chakra-button css-4xx2wk"
+        href="/"
+      >
+        <h2
+          class="chakra-heading css-0"
+        >
+          AirTrail Traffic Registry
+        </h2>
+      </a>
+      <div
+        class="css-17xejub"
+      />
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/dashboard"
+        >
+          Add Flight
+        </a>
+      </div>
+      <div
+        class="chakra-button__group css-1ind3v2"
+        data-orientation="horizontal"
+        role="group"
+      >
+        <a
+          class="chakra-button css-1fysbuj"
+          href="/rules"
+        >
+          Rules
+        </a>
+      </div>
+    </div>
+    <br />
+    <hr
+      aria-orientation="horizontal"
+      class="chakra-divider css-1upb9tn"
+    />
+    <div
+      class="chakra-container css-0"
+    >
+      <p
+        class="chakra-text css-1lx593h"
+      >
+        Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.
+      </p>
+      <div
+        class="css-gmuwbf"
+      >
+        <button
+          class="chakra-button css-1eh75x4"
+          type="button"
+        >
+          Get Flight Data
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
