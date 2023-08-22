@@ -18,8 +18,7 @@ const Header: React.FC = () => {
           <Spacer/>
           <ButtonGroup>
             <Button colorScheme='blue' as='a' href='/dashboard'>Add Flight</Button>
-          </ButtonGroup>
-          <ButtonGroup>
+            <Button colorScheme='blue' as='a' href='/past'>Past Flights</Button>
             <Button colorScheme='blue' as='a' href='/rules'>Rules</Button>
           </ButtonGroup>
       </Flex>
