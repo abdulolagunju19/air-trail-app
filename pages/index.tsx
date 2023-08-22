@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import FlightApp from '../components/FlightApp';
 
+// The main component for the Home page
 export default function Home() {
   return (
     <>

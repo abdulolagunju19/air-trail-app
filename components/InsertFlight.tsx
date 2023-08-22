@@ -10,7 +10,10 @@ import {
 
 import Header from './Header';
 
+// Component for inserting a new flight
 const InsertFlight: React.FC = () => {
+
+  // State variables for form inputs
   const [flightDate, setFlightDate] = useState<string>('');
   const [flightStatus, setFlightStatus] = useState<string>('');
   const [flightAirline, setFlightAirline] = useState<string>('');
@@ -19,8 +22,10 @@ const InsertFlight: React.FC = () => {
   const [arrival, setArrival] = useState<string>('');
   const [icaoValue, setIcaoValue] = useState<string>('');
 
+  // Toast notification for user feedback
   const toast = useToast();
 
+  // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -35,6 +40,8 @@ const InsertFlight: React.FC = () => {
     };
 
     try {
+
+      // Send a POST request to add flight data
       const response = await fetch('/api/flight', {
         method: 'POST',
         headers: {
@@ -46,6 +53,8 @@ const InsertFlight: React.FC = () => {
       if (response.ok) {
         const data = await response.json();
         console.log('Flight data inserted in database:', data);
+
+        // Clear form inputs
         setFlightDate('');
         setFlightStatus('');
         setFlightAirline('');
@@ -54,6 +63,7 @@ const InsertFlight: React.FC = () => {
         setArrival('');
         setIcaoValue ('');
 
+        // Show success toast notification
         toast({
           title: 'Flight added.',
           description: "We've added the flight to the system.",
@@ -65,7 +75,9 @@ const InsertFlight: React.FC = () => {
         console.error('There was an error adding the flight to the system.')
       }
     } catch (error) {
-      console.error('Could not post data to PostgreSQL database, ' + error)
+      console.error('Could not post data to PostgreSQL database, ' + error);
+
+      // Show error toast notification
       toast({
         title: 'Flight not added.',
         description: "Error adding the flight to the system.",

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import InsertFlight from '../components/InsertFlight'
 
+// The main component for the Add Flight page
 export default function Dashboard() {
   return (
     <>

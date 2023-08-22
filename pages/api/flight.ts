@@ -2,12 +2,15 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { conn } from '@/utils/db';
 
+// The API route handler function
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
     if(req.method === 'GET') {
       try {
+        
+        // SQL query to retrieve flight data from the database
         const query = `
           SELECT * FROM flights
         `
@@ -21,6 +24,8 @@ export default async function handler(
 
     } else if (req.method === 'GENERATE'){
       try {
+        
+        // Fetch flight data from an external API using the AviationStack service
         const response = await fetch(`http://api.aviationstack.com/v1/flights?access_key=${process.env.API_KEY}`);
         const flightApiData = await response.json();
     
@@ -28,6 +33,8 @@ export default async function handler(
           const flightData = flightApiData.data;
     
           try {
+
+            // Insert fetched flight data into the PostgreSQL database
             await Promise.all(
               flightData.map(async (flight: FlightData) => {
                 
@@ -85,6 +92,7 @@ export default async function handler(
           req.body.icao
         ];
         
+        // Insert data into the PostgreSQL database
         await conn.query(query, values);
         res.status(200).json({ message: 'Flight has been inserted to PostgreSQL database.'});
       } catch (error) {
@@ -94,6 +102,7 @@ export default async function handler(
     }
 }
 
+// Interface to define the structure of flight data
 interface FlightData {
   flight: {
     number: string;

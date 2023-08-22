@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import PastFlights from '@/components/PastFlights';
 
+// The main component for the Past Flights page
 export default function Past() {
   return (
     <>

@@ -15,6 +15,7 @@ import {
 
 import Header from './Header';
 
+// Interface to define the structure of flight data
 interface Flight {
   icao: string;
   flight_date: string;
@@ -27,13 +28,17 @@ interface Flight {
 
 const FlightApp: React.FC = () => {
   
+  // State to hold the flight data fetched from the API
   const [flightData, setFlightData] = useState<Flight[]>([]);
 
+
+  // Function to fetch flight data from the API
   const getFlightData = async () => {
     try {
       const response = await fetch(`/api/flight`);
       const data = await response.json();
 
+      // Update the flightData state with fetched data
       setFlightData(data);
     } catch (error) {
       throw new Error('There was an error connecting to the API endpoint /api/flight. ' + error);

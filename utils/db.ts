@@ -1,8 +1,10 @@
 // Need to run npm i pg and npm i --save-dev @types/pg
 import { Pool } from 'pg';
 
+// Declare a variable to hold the connection pool
 let conn: any;
 
+// If a connection pool doesn't exist, create a new one
 if (!conn) {
   conn = new Pool({
     user: process.env.PGSQL_USER,

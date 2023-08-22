@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import RuleBook from '../components/RuleBook';
 
+// The main component for the Rules page
 export default function Rules() {
   return (
     <>
