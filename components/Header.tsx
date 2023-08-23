@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <>
       <Flex minWidth='max-content' alignItems='center' gap='2'>
           <Button variant='ghost' as='a' href='/'>
-              <Heading size='md'>AirTrail Traffic Registry</Heading>
+              <Heading size='md'>DemoTrail Traffic Registry</Heading>
           </Button>
           <Spacer/>
           <ButtonGroup>

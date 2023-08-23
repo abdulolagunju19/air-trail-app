@@ -56,7 +56,7 @@ const FlightApp: React.FC = () => {
           width='500px'
         />
         <Box px='5'>
-          <Text py='5'>Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Air Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.</Text>
+          <Text py='5'>Whether it is optimizing crew schedules, coordinating ground operations, or enhancing the passenger experience, the Demo Trail Air Traffic Registry revolutionizes the way aviation professionals interact with air traffic data, ultimately contributing to safer and more efficient flight operations.</Text>
           <UnorderedList>
             <ListItem py='2'>Air Traffic Analytics</ListItem>
             <ListItem py='2'>Regulatory Compliance</ListItem>

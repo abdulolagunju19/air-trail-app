@@ -6,10 +6,10 @@ export default function Rules() {
   return (
     <>
       <Head>
-        <title>Air Trail</title>
-        <meta name="description" content="Brought to you by Air Trail" />
+        <title>Demo Trail</title>
+        <meta name="description" content="Brought to you by Abdul" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/airtrail.jpg" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <RuleBook/>
     </>
