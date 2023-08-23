@@ -1,9 +1,9 @@
-# My Air Trail Project!
+# My Demo Trail Project!
 
 ## Background and Purpose
 In today's fast-paced aviation industry, managing air traffic data efficiently is crucial for ensuring safe and seamless flight operations. 
 
-Modern aviation professionals require reliable tools to streamline their tasks, from monitoring flight scheduling to managing historical data. Our web application, Air Trail Traffic Registry, aims to meet these needs by providing a user-friendly interface to manage and retrieve air traffic data.
+Modern aviation professionals require reliable tools to streamline their tasks, from monitoring flight scheduling to managing historical data. Our web application, Demo Trail Traffic Registry, aims to meet these needs by providing a user-friendly interface to manage and retrieve air traffic data.
 
 Let's take a closer look at a web application designed to manage air traffic data, dissecting its components and discussing potential improvements.
 
